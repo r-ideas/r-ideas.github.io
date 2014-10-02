@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;}
+
+/* Helpers */
+.text-center {text-align: center;}
+.right {float: right;}
+.left {float: left;}
+
+.container {
+  margin: 0 auto;
+  width: 806px;}
+
+.headline {
+  background-color: #ff8533;
+  color: #fff;
+  display: inline-block;
+  font-size: 35px;
+  padding: 16px 20px 20px;}
+/*-------------------------------*/
+
+body {
+  color: #2c2b2b;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: normal;
+  margin-bottom: 80px;}
+
+.main-header {
+  background: url("../images/header-bg.jpg") no-repeat center bottom / cover;
+  height: 560px;
+  overflow: hidden;}
+
+.main-nav {
+  background-color: rgba(0,0,0,0.7);
+  padding: 0 100px;
+  height: 100px;
+  overflow: hidden;}
+
+.main-nav-links {
+  margin-top: 36px;}
+
+.main-nav a {
+  color: #ff8533;
+  font-size: 18px;
+  text-decoration: none;}
+
+.main-nav a + a {margin-left: 50px;}
+
+#why-us {margin-top: 120px;}
+
+.happy-step {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 140px;}
+
+.happy-step p {
+  font-size: 20px;
+  margin-top: 25px;}
+
+.icon-bulb {
+  background: url("../images/sample-icons.png") no-repeat left top;
+  display: inline-block;
+  width: 82px;
+  height: 80px;}
+
+.icon-note {
+  background: url("../images/sample-icons.png") no-repeat -87px top;
+  display: inline-block;
+  width: 76px;
+  height: 80px;}
+
+.icon-hammer {
+  background: url("../images/sample-icons.png") no-repeat -172px top;
+  display: inline-block;
+  width: 42px;
+  height: 80px;}
+
+.icon-s {
+  background: url("../images/sample-icons.png") no-repeat -222px top;
+  display: inline-block;
+  width: 69px;
+  height: 80px;}
+
+#tools {
+  background: url("../images/tools-bg.jpg") no-repeat center bottom / cover;
+  height: 650px;
+  margin-top: 135px;}
+
+#tools .headline {margin-top: 104px;}
+
+.tools {
+  background-color: rgba(0,0,0,0.7);
+  margin-top: 80px;
+  min-height: 172px;
+  padding-top: 14px;}
+
+.partners {
+  background-color: rgba(0,0,0,0.7);
+  margin-top: 60px;
+  min-height: 70px;
+  padding-top: 20px;}
+
+.partners img + img {margin-left: 65px;}
+
+#testimonials {margin-top: 145px;}
