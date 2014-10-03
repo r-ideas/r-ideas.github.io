@@ -4,6 +4,13 @@
   padding: 0;
   margin: 0;}
 
+/*--------------Fonts--------------*/
+@font-face {
+  font-family: "OpenSans-light";
+  src: url("../fonts/OpenSans-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;}
+
 /* Helpers */
 .text-center {text-align: center;}
 .right {float: right;}
@@ -18,12 +25,12 @@
   color: #fff;
   display: inline-block;
   font-size: 35px;
-  padding: 16px 20px 20px;}
+  padding: 10px 20px 16px;}
 /*-------------------------------*/
 
 body {
   color: #2c2b2b;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "OpenSans-light", Arial, sans-serif;
 }
 
 h1 {
@@ -31,10 +38,17 @@ h1 {
   font-weight: normal;
   margin-bottom: 80px;}
 
+.main-logo {
+  background: url("../images/logo_header.png") no-repeat center center;
+  height: 50px;
+  width: 50px;}
+
 .main-header {
   background: url("../images/header-bg.jpg") no-repeat center bottom / cover;
   height: 560px;
   overflow: hidden;}
+
+.main-header .main-logo {margin-top: 25px;}
 
 .main-nav {
   background-color: rgba(0,0,0,0.7);
@@ -48,11 +62,14 @@ h1 {
 .main-nav a {
   color: #ff8533;
   font-size: 18px;
-  text-decoration: none;}
+  text-decoration: none;
+  transition: color 0.5s ease 0s;}
+
+.main-nav a:hover {color: #fefefe;}
 
 .main-nav a + a {margin-left: 50px;}
 
-#why-us {margin-top: 120px;}
+#why-us {padding-top: 120px;margin-bottom: 135px;}
 
 .happy-step {
   display: inline-block;
@@ -60,38 +77,46 @@ h1 {
   text-align: center;
   width: 140px;}
 
+.happy-step + .happy-step {
+  margin-left: 60px;}
+
 .happy-step p {
   font-size: 20px;
-  margin-top: 25px;}
+  margin-top: 15px;}
 
 .icon-bulb {
   background: url("../images/sample-icons.png") no-repeat left top;
   display: inline-block;
-  width: 82px;
-  height: 80px;}
+  width: 90px;
+  height: 90px;}
 
 .icon-note {
   background: url("../images/sample-icons.png") no-repeat -87px top;
   display: inline-block;
-  width: 76px;
-  height: 80px;}
+  width: 85px;
+  height: 90px;}
 
 .icon-hammer {
   background: url("../images/sample-icons.png") no-repeat -172px top;
   display: inline-block;
-  width: 42px;
-  height: 80px;}
+  width: 46px;
+  height: 90px;}
+
+.icon-cogs {
+  background: url("../images/sample-icons.png") no-repeat -220px top;
+  display: inline-block;
+  width: 112px;
+  height: 90px;}
 
 .icon-s {
-  background: url("../images/sample-icons.png") no-repeat -222px top;
+  background: url("../images/sample-icons.png") no-repeat -332px top;
   display: inline-block;
-  width: 69px;
-  height: 80px;}
+  width: 75px;
+  height: 90px;}
 
 #tools {
   background: url("../images/tools-bg.jpg") no-repeat center bottom / cover;
-  height: 650px;
-  margin-top: 135px;}
+  height: 650px;}
 
 #tools .headline {margin-top: 104px;}
 
@@ -109,4 +134,102 @@ h1 {
 
 .partners img + img {margin-left: 65px;}
 
-#testimonials {margin-top: 145px;}
+#testimonials {padding-top: 145px;margin-bottom: 145px;}
+
+.quote {
+  display: inline-block;
+  width: 180px;}
+
+.quote + .quote {margin-left: 130px;}
+
+.quote-text {
+  color: #ff8533;
+  font-size: 20px;}
+
+.quote-text:before {content: "«";}
+.quote-text:after {content: "»";}
+
+.quote-line {
+  border: none;
+  border-top: 1px solid #ff8533;
+  margin: 8px 22px;}
+
+.quote-author {
+  line-height: 1.2;
+  font-size: 15px;}
+
+#contact-us {
+  background: url("../images/contact-us-bg.jpg") no-repeat center bottom / cover;
+  height: 650px;
+  overflow: hidden;}
+
+.contacts {
+  background-color: #ff8533;
+  box-shadow: 0 15px 15px rgba(0,0,0,0.8);
+  color: #fff;
+  font-size: 20px;
+  margin: 215px 0 0 152px;
+  padding: 50px 30px;
+  width: 470px;}
+
+.contacts address {margin-bottom: 30px;}
+
+.light-logo {
+  background: url("../images/Logo_footer.png") no-repeat center center;
+  display: inline-block;
+  height: 83px;
+  width: 64px;}
+
+.main-footer {
+  background-color: #030303;
+  color: #fff;
+  padding: 30px 0 17px;}
+
+.team {margin-top: 40px;}
+
+.team-member {
+  display: inline-block;
+  vertical-align: top;
+  width: 104px;}
+
+.team-member + .team-member {margin-left: 50px;}
+
+.team-member img {
+  border-radius: 100%;
+  border: 2px solid #fff;}
+
+.member-name {
+  font-size: 15px;
+  margin-top: 5px;}
+
+.socials {margin-top: 50px;}
+
+.social-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;}
+
+.social-icon + .social-icon {margin-left: 23px;}
+
+.icon-twitter {
+  background: url("../images/social-icons.png") no-repeat -5px center;}
+
+.icon-facebook {
+  background: url("../images/social-icons.png") no-repeat -40px center;}
+
+.icon-skype {
+  background: url("../images/social-icons.png") no-repeat -75px center;}
+
+.icon-linkedin {
+  background: url("../images/social-icons.png") no-repeat -110px center;}
+
+.icon-github {
+  background: url("../images/social-icons.png") no-repeat -145px center;}
+
+.icon-elance {
+  background: url("../images/social-icons.png") no-repeat -180px center;}
+
+.copyright {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 25px;}
