@@ -25,10 +25,11 @@
   color: #fff;
   display: inline-block;
   font-size: 35px;
-  padding: 10px 20px 16px;}
+  padding: 6px 20px 8px;}
 /*-------------------------------*/
 
 body {
+  background-color: #fff9f2;
   color: #2c2b2b;
   font-family: "OpenSans-light", Arial, sans-serif;
 }
@@ -45,10 +46,13 @@ h1 {
 
 .main-header {
   background: url("../images/header-bg.jpg") no-repeat center bottom / cover;
-  height: 560px;
+  height: 650px;
   overflow: hidden;}
 
 .main-header .main-logo {margin-top: 25px;}
+.main-header .headline:nth-of-type(1) {margin: 120px 0 0 6%;}
+.main-header .headline:nth-of-type(2) {margin: 60px 0 0 24%;}
+.main-header .headline:nth-of-type(3) {margin: 60px 0 0 61%;}
 
 .main-nav {
   background-color: rgba(0,0,0,0.7);
@@ -73,12 +77,22 @@ h1 {
 
 .happy-step {
   display: inline-block;
+  position: relative;
   vertical-align: top;
   text-align: center;
   width: 140px;}
 
 .happy-step + .happy-step {
   margin-left: 60px;}
+
+.happy-step + .happy-step:before {
+  content: "";
+  background: url("../images/arrow.png") no-repeat center center;
+  position: absolute;
+  left: -30px;
+  top: 24px;
+  height: 33px;
+  width: 17px;}
 
 .happy-step p {
   font-size: 20px;
