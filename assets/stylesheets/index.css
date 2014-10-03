@@ -203,6 +203,7 @@ h1 {
 
 .team-member {
   display: inline-block;
+  position: relative;
   vertical-align: top;
   width: 104px;}
 
@@ -247,3 +248,69 @@ h1 {
   font-size: 12px;
   font-weight: bold;
   margin-top: 25px;}
+
+/*-------------Easter Egg-------------*/
+.crosshair {
+  position: absolute;
+  -webkit-animation: underthegun 7s infinite;
+  animation: underthegun 7s infinite;
+  transition: all 1s ease 0s;
+  top: 10px;
+  left: 13px;}
+
+.crosshair .hr {
+  background-color: darkred;
+  width: 36px;
+  height:2px;
+  position: absolute;
+  left: 0;
+  top: 16px;
+  border-radius: 50%;}
+
+.crosshair .vr {
+  background-color: darkred;
+  width: 2px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  border-radius: 50%;}
+
+.crosshair .target {
+  border: 2px solid darkred;
+  border-radius: 100%;
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  height: 16px;
+  width: 16px;}
+
+@keyframes underthegun {
+  0% {top: 10px;left: 13px;}
+  10% {top: 15px;left: 26px;}
+  20% {top: 26px;left: 15px;}
+  30% {top: 62px;left: 51px;}
+  40% {top: 51px;left: 62px;}
+  50% {top: 45px;left: 30px;}
+  60% {top: 20px;left: 35px;}
+  70% {top: 22px;left: 10px;}
+  80% {top: 30px;left: 26px;}
+  90% {top: 12px;left: 30px;}
+  95% {top: 20px;left: 26px;}
+  100% {top: 10px; left: 13px;}
+}
+
+@-webkit-keyframes underthegun {
+  0% {top: 10px;left: 13px;}
+  10% {top: 15px;left: 26px;}
+  20% {top: 26px;left: 15px;}
+  30% {top: 62px;left: 51px;}
+  40% {top: 51px;left: 62px;}
+  50% {top: 45px;left: 30px;}
+  60% {top: 20px;left: 35px;}
+  70% {top: 22px;left: 10px;}
+  80% {top: 30px;left: 26px;}
+  90% {top: 12px;left: 30px;}
+  95% {top: 20px;left: 26px;}
+  100% {top: 10px; left: 13px;}
+}
