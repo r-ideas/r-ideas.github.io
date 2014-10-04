@@ -4,15 +4,18 @@ $(function() {
     // Setup variables
     $window = $(window);
     $slide = $('.homeSlide');
+    isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
     // Init Skrollr
-    var s = skrollr.init({
-      render: function(data) {
+    if( !isMobile ) {
+      var s = skrollr.init({
+        render: function(data) {
 
-      //Debugging - Log the current scroll position.
-      //console.log(data.curTop);
-      }
-    });
+        //Debugging - Log the current scroll position.
+        //console.log(data.curTop);
+        }
+      });
+    }
 
     // Get window size
     winH = $window.height();
@@ -26,7 +29,9 @@ $(function() {
     $slide.height(winH);
 
     // Refresh Skrollr after resizing our sections
-    s.refresh($('.homeSlide'));
+    if( !isMobile ) {
+      s.refresh($('.homeSlide'));
+    }
 
   }
 

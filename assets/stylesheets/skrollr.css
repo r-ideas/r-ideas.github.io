@@ -30,9 +30,8 @@ section {
 #slide-1 .bcg {background-image:url('../images/header-bg.jpg')}
 #slide-1 .hsContent {text-align: left;}
 
-#tools .bcg {
-  background-image: url("../images/tools-bg.jpg");}
-#tools .hsContent {padding: 0;}
+#tools .bcg {background-image: url("../images/tools-bg.jpg");}
+#tools .hsContent, #slide-1 .hsContent {padding: 0;}
 
 #contact-us .bcg {
   background-image: url("../images/contact-us-bg.jpg");}
