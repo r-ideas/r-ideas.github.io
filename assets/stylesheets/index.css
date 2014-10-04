@@ -252,10 +252,9 @@ h1 {
 
 /*-------------Easter Egg-------------*/
 .crosshair {
-  position: absolute;
   -webkit-animation: underthegun 7s infinite;
   animation: underthegun 7s infinite;
-  transition: all 1s ease 0s;
+  position: absolute;
   top: 10px;
   left: 13px;}
 
@@ -286,32 +285,55 @@ h1 {
   height: 16px;
   width: 16px;}
 
+.indus-sign {
+  -webkit-animation: indussign 7s infinite;
+  animation: indussign 7s infinite;
+  background: darkred;
+  border-radius: 100%;
+  position: absolute;
+  top: 36px;
+  left: 42px;
+  width: 4px;
+  height: 4px;}
+
+@keyframes indussign {
+  0%,55%,100% {opacity: 0;}
+  60%,99% {opacity: 1;}
+}
+
+@-webkit-keyframes indussign {
+  0%,55%,100% {opacity: 0;}
+  60%,99% {opacity: 1;}
+}
+
 @keyframes underthegun {
-  0% {top: 10px;left: 13px;}
+  0% {top: 10px;left: 13px;opacity: 1;}
   10% {top: 15px;left: 26px;}
   20% {top: 26px;left: 15px;}
-  30% {top: 62px;left: 51px;}
-  40% {top: 51px;left: 62px;}
-  50% {top: 45px;left: 30px;}
-  60% {top: 20px;left: 35px;}
-  70% {top: 22px;left: 10px;}
-  80% {top: 30px;left: 26px;}
-  90% {top: 12px;left: 30px;}
-  95% {top: 20px;left: 26px;}
-  100% {top: 10px; left: 13px;}
+  25% {top: 32px;left: 31px;}
+  30% {top: 36px;left: 22px;}
+  35% {top: 33px;left: 40px;}
+  45% {top: 20px;left: 26px;}
+  50% {top: 20px;left: 26px;}
+  55% {top: 10px;left: 26px;}
+  60% {top: 17px;left: 26px;}
+  65% {top: 17px;left: 26px;opacity: 1}
+  70% {top: 17px; left: 26px;opacity: 0;}
+  100% {top: 10px; left: 13px;opacity: 0;}
 }
 
 @-webkit-keyframes underthegun {
-  0% {top: 10px;left: 13px;}
+  0% {top: 10px;left: 13px;opacity: 1;}
   10% {top: 15px;left: 26px;}
   20% {top: 26px;left: 15px;}
-  30% {top: 62px;left: 51px;}
-  40% {top: 51px;left: 62px;}
-  50% {top: 45px;left: 30px;}
-  60% {top: 20px;left: 35px;}
-  70% {top: 22px;left: 10px;}
-  80% {top: 30px;left: 26px;}
-  90% {top: 12px;left: 30px;}
-  95% {top: 20px;left: 26px;}
-  100% {top: 10px; left: 13px;}
+  25% {top: 32px;left: 31px;}
+  30% {top: 36px;left: 22px;}
+  35% {top: 33px;left: 40px;}
+  45% {top: 20px;left: 26px;}
+  50% {top: 20px;left: 26px;}
+  55% {top: 10px;left: 26px;}
+  60% {top: 17px;left: 26px;}
+  65% {top: 17px;left: 26px;opacity: 1}
+  70% {top: 17px; left: 26px;opacity: 0;}
+  100% {top: 10px; left: 13px;opacity: 0;}
 }
