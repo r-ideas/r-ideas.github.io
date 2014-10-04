@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;}
 
+a {outline: none;}
+
 /*--------------Fonts--------------*/
 @font-face {
   font-family: "OpenSans-light";
@@ -45,14 +47,14 @@ h1 {
   width: 50px;}
 
 .main-header {
-  background: url("../images/header-bg.jpg") no-repeat center bottom / cover;
-  height: 650px;
-  overflow: hidden;}
+  position: fixed;
+  width: 100%;
+  z-index: 100;}
 
 .main-header .main-logo {margin-top: 25px;}
-.main-header .headline:nth-of-type(1) {margin: 120px 0 0 6%;}
-.main-header .headline:nth-of-type(2) {margin: 60px 0 0 24%;}
-.main-header .headline:nth-of-type(3) {margin: 60px 0 0 61%;}
+#slide-1 .headline:nth-of-type(1) {margin: 120px 0 0 6%;}
+#slide-1 .headline:nth-of-type(2) {margin: 60px 0 0 24%;}
+#slide-1 .headline:nth-of-type(3) {margin: 60px 0 0 61%;}
 
 .main-nav {
   background-color: rgba(0,0,0,0.7);
@@ -128,25 +130,27 @@ h1 {
   width: 75px;
   height: 90px;}
 
-#tools {
-  background: url("../images/tools-bg.jpg") no-repeat center bottom / cover;
-  height: 650px;}
-
 #tools .headline {margin-top: 104px;}
 
 .tools {
   background-color: rgba(0,0,0,0.7);
   margin-top: 80px;
   min-height: 172px;
-  padding-top: 14px;}
+  padding-top: 14px;
+  display: flex;
+  flex-direction: row;}
+
+.tools .item {flex-grow: 1;}
 
 .partners {
   background-color: rgba(0,0,0,0.7);
+  display: flex;
+  flex-direction: row;
   margin-top: 60px;
   min-height: 70px;
   padding-top: 20px;}
 
-.partners img + img {margin-left: 65px;}
+.partners .item {flex-grow: 1;}
 
 #testimonials {padding-top: 145px;margin-bottom: 145px;}
 
@@ -172,24 +176,19 @@ h1 {
   line-height: 1.2;
   font-size: 15px;}
 
-#contact-us {
-  background: url("../images/contact-us-bg.jpg") no-repeat center bottom / cover;
-  height: 650px;
-  overflow: hidden;}
-
 .contacts {
   background-color: #ff8533;
   box-shadow: 0 15px 15px rgba(0,0,0,0.8);
   color: #fff;
   font-size: 20px;
-  margin: 215px 0 0 152px;
+  text-align: left;
   padding: 50px 30px;
   width: 470px;}
 
 .contacts address {margin-bottom: 30px;}
 
 .light-logo {
-  background: url("../images/Logo_footer.png") no-repeat center center;
+  background: url("../images/logo_footer.png") no-repeat center center;
   display: inline-block;
   height: 83px;
   width: 64px;}
@@ -247,7 +246,9 @@ h1 {
 .copyright {
   font-size: 12px;
   font-weight: bold;
-  margin-top: 25px;}
+  position: absolute;
+  width: 84%;
+  bottom: 0;}
 
 /*-------------Easter Egg-------------*/
 .crosshair {

@@ -4,11 +4,12 @@
     <title>r-ideas.org homepage</title>
     <meta content="text/html; charset=utf8" http-equiv="content-type">
     <link media="all" rel="stylesheet" href="assets/stylesheets/index.css" />
+    <link media="all" rel="stylesheet" href="assets/stylesheets/skrollr.css" />
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-logo left"></a>
+        <a class="main-logo left" href="#slide-1"></a>
         <div class="main-nav-links right">
           <a href="#why-us">Why us</a>
           <a href="#tools">Tools</a>
@@ -17,135 +18,188 @@
           <a href="#career">Career</a>
         </div>
       </nav>
-      <div class="headline">Perfect web-apps for your business</div><br>
-      <div class="headline">Brewed with patience and professionalism</div><br>
-      <div class="headline">Crafted with Ruby on Rails</div>
     </header>
 
-    <div id="why-us" class="text-center">
-      <h1>Great reasons to choose r-ideas</h1>
-      <div>
-        <div class="happy-step">
-          <div class="icon-bulb"></div>
-          <p>Your idea</p>
-        </div>
-        <div class="happy-step">
-          <div class="icon-note"></div>
-          <p>You describe<br> We design<br> We plan</p>
-        </div>
-        <div class="happy-step">
-          <div class="icon-hammer"></div>
-          <p>We build<br> You observe</p>
-        </div>
-        <div class="happy-step">
-          <div class="icon-cogs"></div>
-          <p>We deploy<br> You approve</p>
-        </div>
-        <div class="happy-step">
-          <div class="icon-s"></div>
-          <p>Satisfaction</p>
-        </div>
-      </div>
-    </div>
-
-    <div id="tools" class="text-center">
-      <div class="headline">Awesome tools we use to build great apps</div>
-      <div class="tools">
-        <div class="container">
-          <img src="assets/images/rails.png" /><img src="assets/images/nodejs.png" style="margin: 0 222px 0 245px;" /><img src="assets/images/angular.png" />
-        </div>
-      </div>
-      <div class="partners">
-        <img src="assets/images/amazon.png" />
-        <img src="assets/images/github.png" />
-        <img src="assets/images/elance.png" />
-        <img src="assets/images/pivotal.png" />
-        <img src="assets/images/heroku.png" />
-        <img src="assets/images/digital-ocean.png" />
-        <img src="assets/images/google.png" />
-      </div>
-    </div>
-
-    <div id="testimonials" class="text-center">
-      <h1>Still hesitating? Here's what our clients have to say</h1>
-      <div>
-        <blockquote class="quote">
-          <div class="quote-text">Something a person would say, that looks cool as a quote</div>
-          <hr class="quote-line">
-          <div class="quote-author">
-            <p>Person's name</p>
-            <p>Company's name</p>
+    <div class="main">
+      <div id="slide-1" class="homeSlide">
+        <div class="bcg" data-anchor-target="#slide-1" data-top-bottom="background-position: 50% -100px;" data-center="background-position: 50% 0px;">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <div class="headline">Perfect web-apps for your business</div><br>
+              <div class="headline">Brewed with patience and professionalism</div><br>
+              <div class="headline">Crafted with Ruby on Rails</div>
+            </div>
           </div>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="quote-text">Something a person would say, that looks cool as a quote</div>
-          <hr class="quote-line">
-          <div class="quote-author">
-            <p>Person's name</p>
-            <p>Company's name</p>
-          </div>
-        </blockquote>
-        <blockquote class="quote">
-          <div class="quote-text">Something a person would say, that looks cool as a quote</div>
-          <hr class="quote-line">
-          <div class="quote-author">
-            <p>Person's name</p>
-            <p>Company's name</p>
-          </div>
-        </blockquote>
+        </div>
       </div>
-    </div>
 
-    <div id="contact-us">
-      <div class="contacts">
-          <address>95862 Khunta str. 25<br>Lviv, Ukraine</address>
-          <div>email: contact@r-ideas.org</div>
-          <div>skype: r-ideas</div>
-      </div>
-    </div>
-
-    <footer class="main-footer text-center">
-      <a class="light-logo"></a>
-      <div class="team">
-        <div class="team-member">
-          <img src="assets/images/team/Alexander.jpg" />
-          <div class="member-name">Alex Z.</div>
-        </div>
-        <div class="team-member">
-          <div class="crosshair">
-            <div class="hr"></div>
-            <div class="vr"></div>
-            <div class="target"></div>
+      <div id="why-us" class="text-center">
+        <h1>Great reasons to choose r-ideas</h1>
+        <div>
+          <div class="happy-step">
+            <div class="icon-bulb"></div>
+            <p>Your idea</p>
           </div>
-          <img src="assets/images/team/Roman.jpg" />
-          <div class="member-name">Roman G.</div>
-        </div>
-        <div class="team-member">
-          <img src="assets/images/team/Tanya.jpg" />
-          <div class="member-name">Tanya C.</div>
-        </div>
-        <div class="team-member">
-          <img src="assets/images/team/Slavik.jpg" />
-          <div class="member-name">Slavik G.</div>
-        </div>
-        <div class="team-member">
-          <img src="assets/images/team/Artem.jpg" />
-          <div class="member-name">Artem T.</div>
-        </div>
-        <div class="team-member">
-          <img src="assets/images/team/Eldar.jpg" />
-          <div class="member-name">Eldar M.</div>
+          <div class="happy-step">
+            <div class="icon-note"></div>
+            <p>You describe<br> We design<br> We plan</p>
+          </div>
+          <div class="happy-step">
+            <div class="icon-hammer"></div>
+            <p>We build<br> You observe</p>
+          </div>
+          <div class="happy-step">
+            <div class="icon-cogs"></div>
+            <p>We deploy<br> You approve</p>
+          </div>
+          <div class="happy-step">
+            <div class="icon-s"></div>
+            <p>Satisfaction</p>
+          </div>
         </div>
       </div>
-      <div class="socials">
-        <a href="#" class="social-icon icon-twitter"></a>
-        <a href="#" class="social-icon icon-facebook"></a>
-        <a href="#" class="social-icon icon-skype"></a>
-        <a href="#" class="social-icon icon-linkedin"></a>
-        <a href="#" class="social-icon icon-github"></a>
-        <a href="#" class="social-icon icon-elance"></a>
+
+      <div id="tools" class="homeSlide">
+        <div class="bcg" data-anchor-target="#tools" data-top-bottom="background-position: 50% -500px;" data-center="background-position: 50% 0px;">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <div class="headline">Awesome tools we use to build great apps</div>
+              <div class="tools">
+                <div class="item">
+                  <img src="assets/images/tools/rails.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/tools/nodejs.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/tools/angular.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/tools/marionette.png" />
+                </div>
+              </div>
+              <div class="partners">
+                <div class="item">
+                  <img src="assets/images/partners/amazon.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/partners/github.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/partners/elance.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/partners/pivotal.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/partners/heroku.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/partners/digital-ocean.png" />
+                </div>
+                <div class="item">
+                  <img src="assets/images/partners/google.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="copyright">Copyright 2014 r-ideas. All Rights Reserved.</div>
-    </footer>
+
+      <div id="testimonials" class="text-center">
+        <h1>Still hesitating? Here's what our clients have to say</h1>
+        <div>
+          <blockquote class="quote">
+            <div class="quote-text">Something a person would say, that looks cool as a quote</div>
+            <hr class="quote-line">
+            <div class="quote-author">
+              <p>Person's name</p>
+              <p>Company's name</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="quote-text">Something a person would say, that looks cool as a quote</div>
+            <hr class="quote-line">
+            <div class="quote-author">
+              <p>Person's name</p>
+              <p>Company's name</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote">
+            <div class="quote-text">Something a person would say, that looks cool as a quote</div>
+            <hr class="quote-line">
+            <div class="quote-author">
+              <p>Person's name</p>
+              <p>Company's name</p>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+
+      <div id="contact-us" class="homeSlide">
+        <div class="bcg" data-anchor-target="#contact-us" data-top-bottom="background-position: 50% -300px;" data-center="background-position: 50% 0px;">
+          <div class="hsContainer">
+            <div class="hsContent">
+              <div class="contacts">
+                  <div>email: contact@r-ideas.org</div>
+                  <address>95862 Khunta str. 25<br>Lviv, Ukraine</address>
+                  <div>skype: r-ideas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="main-footer homeSlide">
+        <div class="hsContainer">
+          <div class="hsContent">
+            <a class="light-logo"></a>
+            <div class="team">
+              <div class="team-member">
+                <img src="assets/images/team/Alexander.jpg" />
+                <div class="member-name">Alex Z.</div>
+              </div>
+              <div class="team-member">
+                <div class="crosshair">
+                  <div class="hr"></div>
+                  <div class="vr"></div>
+                  <div class="target"></div>
+                </div>
+                <img src="assets/images/team/Roman.jpg" />
+                <div class="member-name">Roman G.</div>
+              </div>
+              <div class="team-member">
+                <img src="assets/images/team/Tanya.jpg" />
+                <div class="member-name">Tanya C.</div>
+              </div>
+              <div class="team-member">
+                <img src="assets/images/team/Slavik.jpg" />
+                <div class="member-name">Slavik G.</div>
+              </div>
+              <div class="team-member">
+                <img src="assets/images/team/Artem.jpg" />
+                <div class="member-name">Artem T.</div>
+              </div>
+              <div class="team-member">
+                <img src="assets/images/team/Eldar.jpg" />
+                <div class="member-name">Eldar M.</div>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="#" class="social-icon icon-twitter"></a>
+              <a href="#" class="social-icon icon-facebook"></a>
+              <a href="#" class="social-icon icon-skype"></a>
+              <a href="#" class="social-icon icon-linkedin"></a>
+              <a href="#" class="social-icon icon-github"></a>
+              <a href="#" class="social-icon icon-elance"></a>
+            </div>
+            <div class="copyright">Copyright 2014 r-ideas. All Rights Reserved.</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/skrollr.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
