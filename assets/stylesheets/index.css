@@ -151,20 +151,28 @@ h1 {
   margin-top: 80px;
   min-height: 172px;
   padding-top: 14px;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;}
 
-.tools .item {flex-grow: 1;}
+.tools .item {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;}
 
 .partners {
   background-color: rgba(0,0,0,0.7);
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
   margin-top: 60px;
   min-height: 70px;
   padding-top: 20px;}
 
-.partners .item {flex-grow: 1;}
+.partners .item {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;}
 
 #testimonials {padding-top: 145px;margin-bottom: 145px;}
 
