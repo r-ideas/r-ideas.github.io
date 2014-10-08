@@ -47,10 +47,33 @@ h1 {
   background-size: cover;
   min-height: 650px;}
 
+.logo-wrapper {
+  position: relative;
+  width: 50px;}
+
+.logo-wrapper .main-logo {
+  position: absolute;
+  transition: opacity 0.5s ease 0s;
+  top: 0;
+  left: 0;}
+
+.logo-wrapper .main-logo.alt {
+  opacity: 0;}
+
+.logo-wrapper:hover .main-logo {
+  opacity: 0;}
+
+.logo-wrapper:hover .main-logo.alt {
+  opacity: 1;}
+
 .main-logo {
-  background: url("../images/logo_header.png") no-repeat center center;
+  background: url("../images/main_logo.png") no-repeat center top;
+  display: inline-block;
   height: 50px;
   width: 50px;}
+
+.main-logo.alt {
+  background-position: center bottom;}
 
 .main-header {
   position: fixed;
@@ -78,7 +101,7 @@ h1 {
 .main-nav-links {
   margin-top: 36px;}
 
-.main-nav a {
+.main-nav-links a {
   color: #ff8533;
   font-size: 18px;
   text-decoration: none;
@@ -86,7 +109,7 @@ h1 {
 
 .main-nav a:hover {color: #fefefe;}
 
-.main-nav a + a {margin-left: 50px;}
+.main-nav-links a + a {margin-left: 50px;}
 
 #why-us {padding-top: 120px;margin-bottom: 135px;}
 
@@ -178,9 +201,8 @@ h1 {
 
 .quote {
   display: inline-block;
-  width: 180px;}
-
-.quote + .quote {margin-left: 8.125%;}
+  padding: 0 3%;
+  width: 33%;}
 
 .quote-text {
   color: #ff8533;
