@@ -5,6 +5,7 @@
   margin: 0;}
 
 a {outline: none;}
+ul,ol {list-style: none;}
 
 /*--------------Fonts--------------*/
 @font-face {
@@ -17,6 +18,11 @@ a {outline: none;}
 .text-center {text-align: center;}
 .right {float: right;}
 .left {float: left;}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;}
 
 .container {
   margin: 0 auto;
@@ -296,90 +302,56 @@ h1 {
   font-weight: bold;
   margin-top: 25px;}
 
-/*-------------Easter Egg-------------*/
-.crosshair {
-  -webkit-animation: underthegun 7s infinite;
-  animation: underthegun 7s infinite;
+/* ====================== Portfolio ==============*/
+.portfolio {
+  height: 650px;
+  position: relative;
+  overflow: hidden;}
+
+.portfolio-slider {
+  height: inherit;
+  width: 7620px;}
+
+.portfolio-slide {
+  background-position: center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  height: 100%;
+  float: left;
+  width: 1905px;
+  position: relative;}
+
+.portfolio [class*=-arrow] {
+  color: #ff8533;
+  cursor: pointer;
+  font-size: 4em;
   position: absolute;
-  top: 10px;
-  left: 13px;}
+  top: 50%;
+  margin-top: -32px;
+  z-index: 100;}
 
-.crosshair .hr {
-  background-color: darkred;
-  width: 36px;
-  height:2px;
-  position: absolute;
-  left: 0;
-  top: 16px;
-  border-radius: 50%;}
+.left-arrow {left: 7%;}
 
-.crosshair .vr {
-  background-color: darkred;
-  width: 2px;
-  height: 36px;
-  position: absolute;
-  top: 0;
-  left: 16px;
-  border-radius: 50%;}
+.right-arrow {right: 7%;}
 
-.crosshair .target {
-  border: 2px solid darkred;
-  border-radius: 100%;
-  position: absolute;
-  left: 9px;
-  top: 9px;
-  height: 16px;
-  width: 16px;}
+.portfolio-desc {
+  background: #ff8533;
+  color: #fff;
+  margin: 247px 0 0 15.625%;
+  padding: 40px 70px 45px 30px;
+  font-size: 18px;
+  width: 400px;}
 
-.indus-sign {
-  -webkit-animation: indussign 7s infinite;
-  animation: indussign 7s infinite;
-  background: darkred;
-  border-radius: 100%;
-  position: absolute;
-  top: 36px;
-  left: 42px;
-  width: 4px;
-  height: 4px;}
+.portfolio-title {
+  font-size: 25px;}
 
-@keyframes indussign {
-  0%,55%,100% {opacity: 0;}
-  60%,99% {opacity: 1;}
-}
+.portfolio-desc p {
+  margin-top: 25px;
+  line-height: 28px;}
 
-@-webkit-keyframes indussign {
-  0%,55%,100% {opacity: 0;}
-  60%,99% {opacity: 1;}
-}
+.portfolio-tools {
+  margin-top: 15px;
+  font-size: 30px;}
 
-@keyframes underthegun {
-  0% {top: 10px;left: 13px;opacity: 1;}
-  10% {top: 15px;left: 26px;}
-  20% {top: 26px;left: 15px;}
-  25% {top: 32px;left: 31px;}
-  30% {top: 36px;left: 22px;}
-  35% {top: 33px;left: 40px;}
-  45% {top: 20px;left: 26px;}
-  50% {top: 20px;left: 26px;}
-  55% {top: 10px;left: 26px;}
-  60% {top: 17px;left: 26px;}
-  65% {top: 17px;left: 26px;opacity: 1}
-  70% {top: 17px; left: 26px;opacity: 0;}
-  100% {top: 10px; left: 13px;opacity: 0;}
-}
-
-@-webkit-keyframes underthegun {
-  0% {top: 10px;left: 13px;opacity: 1;}
-  10% {top: 15px;left: 26px;}
-  20% {top: 26px;left: 15px;}
-  25% {top: 32px;left: 31px;}
-  30% {top: 36px;left: 22px;}
-  35% {top: 33px;left: 40px;}
-  45% {top: 20px;left: 26px;}
-  50% {top: 20px;left: 26px;}
-  55% {top: 10px;left: 26px;}
-  60% {top: 17px;left: 26px;}
-  65% {top: 17px;left: 26px;opacity: 1}
-  70% {top: 17px; left: 26px;opacity: 0;}
-  100% {top: 10px; left: 13px;opacity: 0;}
-}
+.portfolio-tools .fa + .fa {
+  margin-left: 15px;}
