@@ -302,24 +302,18 @@ h1 {
   font-weight: bold;
   margin-top: 25px;}
 
-/* ====================== Portfolio ==============*/
-.portfolio {
-  height: 650px;
-  position: relative;
-  overflow: hidden;}
+/* ====================== Portfolio carousel ==============*/
+.carousel-control {z-index: 1}
 
-.portfolio-slider {
-  height: inherit;
-  width: 7620px;}
+.portfolio {height: 650px;}
 
-.portfolio-slide {
+.carousel-inner {height: 100%;}
+
+.carousel-inner .item {
   background-position: center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
-  height: 100%;
-  float: left;
-  width: 1905px;
-  position: relative;}
+  height: 100%;}
 
 .portfolio [class*=-arrow] {
   color: #ff8533;
@@ -337,7 +331,9 @@ h1 {
 .portfolio-desc {
   background: #ff8533;
   color: #fff;
-  margin: 247px 0 0 15.625%;
+  position: absolute;
+  top: 247px;
+  left: 15.625%;
   padding: 40px 70px 45px 30px;
   font-size: 18px;
   width: 400px;}

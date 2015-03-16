@@ -7,6 +7,7 @@
     <meta content="R-IDEAS" name="author">
     <meta content="Web application development using Ruby on Rails. We provide superior code quality and use agile technique in our work. Flexible timeline, clear communication." name="description">
     <link media="all" rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link media="all" rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link media="all" rel="stylesheet" href="assets/css/index.css" />
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
     <link rel="apple-touch-icon" href="assets/images/apple-touch-favicon.png"/>
@@ -140,11 +141,18 @@
         </div>
       </div>
 
-      <div class="homeSlide portfolio" id="portfolio">
-        <div class="left-arrow fa fa-angle-left"></div>
-        <div class="right-arrow fa fa-angle-right"></div>
-        <ul class="portfolio-slider">
-          <li class="portfolio-slide" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
+      <div class="homeSlide portfolio carousel slide" data-ride="carousel" id="portfolio">
+        <!-- carousel controls -->
+        <a class="carousel-control left" data-slide="prev" href="#portfolio">
+          <i class="left-arrow fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right" data-slide="next" href="#portfolio">
+          <i class="right-arrow fa fa-angle-right"></i>
+        </a>
+
+        <!-- carousel body -->
+        <ul class="carousel-inner">
+          <li class="item active" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
             <div class="portfolio-desc">
               <div class="portfolio-title">DiveCntre HQ</div>
               <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud.</p>
@@ -157,10 +165,11 @@
               </div>
             </div>
           </li>
-          <li class="portfolio-slide" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
             <div class="portfolio-desc">
-              <div class="portfolio-title">DiveCntre HQ</div>
-              <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud.</p>
+              <div class="portfolio-title">Vikando</div>
+              <p>Bla bla bla</p>
               <div class="portfolio-tools">
                 <i class="fa fa-code"></i>
                 <i class="fa fa-lightbulb-o"></i>
@@ -170,10 +179,11 @@
               </div>
             </div>
           </li>
-          <li class="portfolio-slide" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
             <div class="portfolio-desc">
-              <div class="portfolio-title">DiveCntre HQ</div>
-              <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud.</p>
+              <div class="portfolio-title">Another crazy project</div>
+              <p>Lorem ipsu dolore</p>
               <div class="portfolio-tools">
                 <i class="fa fa-code"></i>
                 <i class="fa fa-lightbulb-o"></i>
@@ -183,10 +193,11 @@
               </div>
             </div>
           </li>
-          <li class="portfolio-slide" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
             <div class="portfolio-desc">
-              <div class="portfolio-title">DiveCntre HQ</div>
-              <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud.</p>
+              <div class="portfolio-title">Homepage remastered</div>
+              <p>Remastered Homepage Jajajaja</p>
               <div class="portfolio-tools">
                 <i class="fa fa-code"></i>
                 <i class="fa fa-lightbulb-o"></i>
@@ -196,10 +207,11 @@
               </div>
             </div>
           </li>
-          <li class="portfolio-slide" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
             <div class="portfolio-desc">
-              <div class="portfolio-title">DiveCntre HQ</div>
-              <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud.</p>
+              <div class="portfolio-title">Dialogfeed</div>
+              <p>Sample text</p>
               <div class="portfolio-tools">
                 <i class="fa fa-code"></i>
                 <i class="fa fa-lightbulb-o"></i>
@@ -251,7 +263,8 @@
         <div class="copyright">&copy; 2010-2014 R-IDEAS LLC. All Rights Reserved.</div>
       </footer>
     </div>
-    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
