@@ -5,4 +5,8 @@ $(function() {
     $("html,body").animate({scrollTop: targetTopPosition}, "1000");
     return false;
   });
+
+  $("body").on('click', '.nav-toggle', function() {
+    $(".main-nav-links").slideToggle("slow");
+  });
 });
