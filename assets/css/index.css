@@ -313,6 +313,7 @@ h1 {
   background-position: center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
+  float: none;
   height: 100%;}
 
 .portfolio [class*=-arrow] {
