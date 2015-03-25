@@ -40,6 +40,8 @@
     display: -webkit-flex;
     flex: 1 1 100%;
     -webkit-flex: 1 1 100%;
+    align-items: center;
+    -webkit-align-items: center;
     justify-content: center;
     -webkit-justify-content: center;}
 
@@ -51,12 +53,9 @@
     left: 50%;
     transform: rotate(90deg);}
 
-  .happy-step > * {
-    display: table-cell;
-    vertical-align: middle;}
-
   .happy-step p {
     padding-left: 30px;
+    margin-top: 0;
     text-align: left;}
 
   /*------------ Testimonials ------------*/
