@@ -59,6 +59,17 @@
     padding-left: 30px;
     text-align: left;}
 
+  /*------------ Testimonials ------------*/
+  .quote {
+    flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;}
+
+  /*------------ Contacts ------------*/
+  .contacts {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: auto;}
+
   /*------------ Footer ------------*/
   .team {
     flex-wrap: wrap;
