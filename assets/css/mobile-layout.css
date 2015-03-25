@@ -1,4 +1,6 @@
 @media (max-width: 768px) {
+  h1 {font-size: 30px;}
+
   /*------------ Header ------------*/
   .logo-wrapper {height: 60px;}
 
@@ -27,6 +29,35 @@
 
     #intro .headline:nth-of-type(2) {margin-left: 5%;}
     #intro .headline:nth-of-type(3) {margin-left: 5%;}
+
+  /*------------ Happy steps ------------*/
+  .happy-steps {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;}
+
+  .happy-step {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1 1 100%;
+    -webkit-flex: 1 1 100%;
+    justify-content: center;
+    -webkit-justify-content: center;}
+
+  .happy-step + .happy-step {margin-top: 60px;}
+
+  .happy-step + .happy-step:before {
+    background-size: 65%;
+    top: -45px;
+    left: 50%;
+    transform: rotate(90deg);}
+
+  .happy-step > * {
+    display: table-cell;
+    vertical-align: middle;}
+
+  .happy-step p {
+    padding-left: 30px;
+    text-align: left;}
 
   /*------------ Footer ------------*/
   .team {

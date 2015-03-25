@@ -45,6 +45,7 @@ body {
 h1 {
   font-size: 45px;
   font-weight: normal;
+  margin-top: 0;
   margin-bottom: 80px;}
 
 .homeSlide {
@@ -134,12 +135,17 @@ h1 {
 
 #why-us {padding-top: 120px;margin-bottom: 135px;}
 
+/*------------ Happy steps ------------*/
+.happy-steps {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;}
+
 .happy-step {
-  display: inline-block;
   position: relative;
-  vertical-align: top;
-  text-align: center;
-  width: 140px;}
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;}
 
 .happy-step + .happy-step {
   margin-left: 3.75%;}
@@ -156,6 +162,8 @@ h1 {
 .happy-step p {
   font-size: 20px;
   margin-top: 15px;}
+
+.icon-wrapper {min-width: 112px;}
 
 .icon-bulb {
   background: url("../images/sample-icons.png") no-repeat left top;
