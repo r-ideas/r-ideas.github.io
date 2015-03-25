@@ -6,62 +6,82 @@
     <meta content="ruby, rails, agile, outsource, web development, r-ideas, r-ideas.org, r-ideas.net, r ideas, rideas" name="keywords">
     <meta content="R-IDEAS" name="author">
     <meta content="Web application development using Ruby on Rails. We provide superior code quality and use agile technique in our work. Flexible timeline, clear communication." name="description">
-    <link media="all" rel="stylesheet" href="/assets/stylesheets/index.css" />
+
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico"/>
     <link rel="shortcut icon type" type="image/x-icon" href="/assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-favicon.png"/>
+
+    <link media="all" rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link media="all" rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link media="all" rel="stylesheet" href="assets/css/index.css" />
+    <link media="all" rel="stylesheet" href="assets/css/mobile-layout.css" />
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-nav">
+      <nav class="main-nav clearfix">
         <div class="left logo-wrapper">
           <a class="main-logo" href="#intro"></a>
           <a class="main-logo alt" href="#intro"></a>
+        </div>
+        <div class="nav-toggle right">
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
+          <div class="icon-bar"></div>
         </div>
         <div class="main-nav-links right">
           <a href="#why-us">Why us</a>
           <a href="#tools">Tools</a>
           <a href="#testimonials">Testimonials</a>
           <a href="#contact-us">Contact us</a>
-        <!--#<a href="#career">Career</a>-->
+        <!--<a href="#career">Career</a>-->
         </div>
       </nav>
     </header>
 
     <div class="main">
-      <div id="intro" class="homeSlide">
-        <div class="headline">Perfect web-apps for your business</div><br>
-        <div class="headline">Brewed with patience and professionalism</div><br>
+      <div id="intro" class="homeSlide clearfix">
+        <div class="headline">Perfect web-apps for your business</div>
+        <div class="headline">Brewed with patience and professionalism</div>
         <div class="headline">Crafted with Ruby on Rails</div>
       </div>
 
       <div id="why-us" class="text-center">
         <h1>Great reasons to choose r-ideas</h1>
-        <div>
+        <div class="happy-steps">
           <div class="happy-step">
-            <div class="icon-bulb"></div>
+            <div class="icon-wrapper">
+              <i class="icon-bulb"></i>
+            </div>
             <p>Your idea</p>
           </div>
           <div class="happy-step">
-            <div class="icon-note"></div>
+            <div class="icon-wrapper">
+              <i class="icon-note"></i>
+            </div>
             <p>You describe<br> We design<br> We plan</p>
           </div>
           <div class="happy-step">
-            <div class="icon-hammer"></div>
+            <div class="icon-wrapper">
+              <i class="icon-hammer"></i>
+            </div>
             <p>We build<br> You observe</p>
           </div>
           <div class="happy-step">
-            <div class="icon-cogs"></div>
+            <div class="icon-wrapper">
+              <i class="icon-cogs"></i>
+            </div>
             <p>We deploy<br> You approve</p>
           </div>
           <div class="happy-step">
-            <div class="icon-s"></div>
+            <div class="icon-wrapper">
+              <i class="icon-s"></i>
+            </div>
             <p>Satisfaction</p>
           </div>
         </div>
       </div>
 
-      <div id="tools" class="homeSlide text-center">
+      <div id="tools" class="homeSlide text-center clearfix">
         <div class="headline">Awesome tools we use to build great apps</div>
         <div class="tools">
           <div class="item">
@@ -104,7 +124,7 @@
 
       <div id="testimonials" class="text-center">
         <h1>Still hesitating? Here's what our clients have to say</h1>
-        <div>
+        <div class="quotes">
           <blockquote class="quote">
             <div class="quote-text">We have been working with R-Ideas for over 4 years on several different projects, both large and small.<br> They have been very easy to work with, and have always delivered quality solutions on time</div>
             <hr class="quote-line">
@@ -132,6 +152,89 @@
             <div>email: contact@r-ideas.org</div>
             <div>skype: r-ideas.org</div>
         </div>
+      </div>
+
+      <div class="homeSlide portfolio carousel slide" data-ride="carousel" id="portfolio">
+        <!-- carousel controls -->
+        <a class="carousel-control left" data-slide="prev" href="#portfolio">
+          <i class="left-arrow fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control right" data-slide="next" href="#portfolio">
+          <i class="right-arrow fa fa-angle-right"></i>
+        </a>
+
+        <!-- carousel body -->
+        <ul class="carousel-inner">
+          <li class="item active" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/test-project.jpg);" alt="" />
+            <div class="portfolio-desc">
+              <div class="portfolio-title">DiveCntre HQ</div>
+              <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud.</p>
+              <div class="portfolio-tools">
+                <i class="fa fa-code"></i>
+                <i class="fa fa-lightbulb-o"></i>
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-wrench"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/Vikando.jpg);" alt="" />
+            <div class="portfolio-desc">
+              <div class="portfolio-title">Vikando</div>
+              <p>A complete dive shop management system delivering point of sale, event management and customer relationship facilities in the cloud</p>
+              <div class="portfolio-tools">
+                <i class="fa fa-code"></i>
+                <i class="fa fa-lightbulb-o"></i>
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-wrench"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/Boto.jpg);" alt="" />
+            <div class="portfolio-desc">
+              <div class="portfolio-title">Boto</div>
+              <p>A streamlined issue tracking, is a new issue tracking service for those who just want to cut the crap and get to work. With a light, airy design it is the minimalist's wet dream. No more work-flow interruptions</p>
+              <div class="portfolio-tools">
+                <i class="fa fa-code"></i>
+                <i class="fa fa-lightbulb-o"></i>
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-wrench"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/Dialogfeed.jpg);" alt="" />
+            <div class="portfolio-desc">
+              <div class="portfolio-title">Dialogfeed</div>
+              <p>A unique tool created to collect and store in one single place comment feeds from different sources like Facebook, Twitter and YouTube with great possibilities to easily integrate application widget to any html page.</p>
+              <div class="portfolio-tools">
+                <i class="fa fa-code"></i>
+                <i class="fa fa-lightbulb-o"></i>
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-wrench"></i>
+              </div>
+            </div>
+          </li>
+
+          <li class="item" style="background-image: url('assets/images/scanline_pattern.png'), url(assets/images/Seat-Sumo.jpg);" alt="" />
+            <div class="portfolio-desc">
+              <div class="portfolio-title">SeatSumo</div>
+              <p>A social-based service created to share and exchange different tickets liek tickets for sport events, cinema, theater, etc.</p>
+              <div class="portfolio-tools">
+                <i class="fa fa-code"></i>
+                <i class="fa fa-lightbulb-o"></i>
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil"></i>
+                <i class="fa fa-wrench"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
 
       <footer class="main-footer text-center">
@@ -173,7 +276,8 @@
         <div class="copyright">&copy; 2014 R-IDEAS LLC. All Rights Reserved.</div>
       </footer>
     </div>
-    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/js/jquery-2.1.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>

@@ -5,6 +5,7 @@
   margin: 0;}
 
 a {outline: none;}
+ul,ol {list-style: none;}
 
 /*--------------Fonts--------------*/
 @font-face {
@@ -18,6 +19,11 @@ a {outline: none;}
 .right {float: right;}
 .left {float: left;}
 
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;}
+
 .container {
   margin: 0 auto;
   width: 806px;}
@@ -27,7 +33,7 @@ a {outline: none;}
   color: #fff;
   display: inline-block;
   font-size: 35px;
-  padding: 6px 20px 8px;}
+  padding: 0.2em 0.6em;}
 /*-------------------------------*/
 
 body {
@@ -39,6 +45,7 @@ body {
 h1 {
   font-size: 45px;
   font-weight: normal;
+  margin-top: 0;
   margin-bottom: 80px;}
 
 .homeSlide {
@@ -49,12 +56,13 @@ h1 {
 
 .logo-wrapper {
   position: relative;
+  height: 100px;
   width: 50px;}
 
 .logo-wrapper .main-logo {
   position: absolute;
   transition: opacity 0.5s ease 0s;
-  top: 0;
+  top: 25px;
   left: 0;}
 
 .logo-wrapper .main-logo.alt {
@@ -82,43 +90,62 @@ h1 {
 
 #intro {background-image:url('../images/header-bg.jpg')}
 
-.main-header .main-logo {margin-top: 25px;}
-#intro .headline:nth-of-type(1) {margin: 220px 0 0 6%;}
-#intro .headline:nth-of-type(2) {margin: 60px 0 0 24%;}
-#intro .headline:nth-of-type(3) {margin: 60px 0 0 61%;}
+#intro .headline:nth-of-type(1) {margin: 220px 5% 0;}
+#intro .headline:nth-of-type(2) {margin: 60px 5% 0 24%;}
+#intro .headline:nth-of-type(3) {margin: 60px 5% 0 61%;}
 
-@media screen and (max-width:1280px) {
+@media (min-width:769px) and (max-width:1280px) {
   #intro .headline:nth-of-type(2) {margin-left: 15%;}
   #intro .headline:nth-of-type(3) {margin-left: 50%;}
 }
 
+/*----- Nav bar toggle menu -----------*/
+.nav-toggle {
+  cursor: pointer;
+  display: none;
+  padding: 18px;}
+
+.nav-toggle .icon-bar {
+  background-color: #ff8533;
+  height: 4px;
+  margin-top: 4px;
+  transition: background-color 0.5s ease 0s;
+  width: 24px;}
+
+.nav-toggle:hover .icon-bar {
+  background-color: #fff;}
+
 .main-nav {
   background-color: rgba(0,0,0,0.7);
-  padding: 0 100px;
-  height: 100px;
-  overflow: hidden;}
+  padding: 0 5%;}
 
-.main-nav-links {
-  margin-top: 36px;}
+@media (min-width:769px) {
+  .main-nav-links {display: block !important;}
+}
 
-.main-nav-links a {
+.main-nav-links > a {
   color: #ff8533;
+  display: inline-block;
   font-size: 18px;
+  padding: 38px 20px;
   text-decoration: none;
   transition: color 0.5s ease 0s;}
 
-.main-nav a:hover {color: #fefefe;}
-
-.main-nav-links a + a {margin-left: 50px;}
+.main-nav-links > a:hover {color: #fefefe;}
 
 #why-us {padding-top: 120px;margin-bottom: 135px;}
 
+/*------------ Happy steps ------------*/
+.happy-steps {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;}
+
 .happy-step {
-  display: inline-block;
   position: relative;
-  vertical-align: top;
-  text-align: center;
-  width: 140px;}
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;}
 
 .happy-step + .happy-step {
   margin-left: 3.75%;}
@@ -135,6 +162,8 @@ h1 {
 .happy-step p {
   font-size: 20px;
   margin-top: 15px;}
+
+.icon-wrapper {min-width: 112px;}
 
 .icon-bulb {
   background: url("../images/sample-icons.png") no-repeat left top;
@@ -166,6 +195,7 @@ h1 {
   width: 75px;
   height: 90px;}
 
+/*------- Tools --------------*/
 #tools {background-image: url("../images/tools-bg.jpg");}
 #tools .headline {margin-top: 104px;}
 
@@ -176,33 +206,40 @@ h1 {
   padding-top: 14px;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;}
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;}
 
 .tools .item {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;}
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;}
 
 .partners {
   background-color: rgba(0,0,0,0.7);
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  margin-top: 60px;
-  min-height: 70px;
-  padding-top: 20px;}
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin-top: 60px;}
 
 .partners .item {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;}
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  margin: 20px 10px;}
 
+/*--------- Testimonials ------------*/
 #testimonials {padding-top: 145px;margin-bottom: 145px;}
 
+.quotes{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;}
+
 .quote {
-  display: inline-block;
   padding: 0 3%;
-  width: 33%;}
+  flex: 1 0 33%;
+  -webkit-flex: 1 0 33%;
+  margin-top: 25px;}
 
 .quote-text {
   color: #ff8533;
@@ -220,7 +257,15 @@ h1 {
   line-height: 1.2;
   font-size: 15px;}
 
-#contact-us { background-image: url("../images/contact-us-bg.jpg");
+@media (min-width:769px) and (max-width:1280px) {
+  .quote {
+    flex: 1 0 50%;
+    -webkit-flex: 1 0 50%;}
+}
+
+/*--------- Contact us ---------*/
+#contact-us {
+  background-image: url("../images/contact-us-bg.jpg");
   overflow: hidden;}
 
 .contacts {
@@ -230,11 +275,12 @@ h1 {
   font-size: 20px;
   text-align: left;
   padding: 50px 30px;
-  margin: 215px 0 0 157px;
+  margin: 215px 0 0 15%;
   width: 470px;}
 
 .contacts address {margin-bottom: 30px;}
 
+/*------------ Footer -------------*/
 .light-logo {
   background: url("../images/logo_footer.png") no-repeat center center;
   display: inline-block;
@@ -246,13 +292,13 @@ h1 {
   color: #fff;
   padding: 30px 0 17px;}
 
-.team {margin-top: 40px;}
+.team {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;}
 
-.team-member {
-  display: inline-block;
-  position: relative;
-  vertical-align: top;
-  width: 104px;}
+.team-member {margin-top: 40px;}
 
 .team-member + .team-member {margin-left: 3.125%;}
 
@@ -296,90 +342,53 @@ h1 {
   font-weight: bold;
   margin-top: 25px;}
 
-/*-------------Easter Egg-------------*/
-.crosshair {
-  -webkit-animation: underthegun 7s infinite;
-  animation: underthegun 7s infinite;
+/* ====================== Portfolio carousel ==============*/
+.carousel-control {z-index: 1}
+
+.portfolio {height: 650px;}
+
+.carousel-inner {height: 100%;}
+
+.carousel-inner .item {
+  background-position: center center;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  float: none;
+  height: 100%;}
+
+.portfolio [class*=-arrow] {
+  color: #ff8533;
+  cursor: pointer;
+  font-size: 4em;
   position: absolute;
-  top: 10px;
-  left: 13px;}
+  top: 50%;
+  margin-top: -32px;
+  z-index: 100;}
 
-.crosshair .hr {
-  background-color: darkred;
-  width: 36px;
-  height:2px;
+.left-arrow {left: 7%;}
+
+.right-arrow {right: 7%;}
+
+.portfolio-desc {
+  background: #ff8533;
+  color: #fff;
   position: absolute;
-  left: 0;
-  top: 16px;
-  border-radius: 50%;}
+  top: 247px;
+  left: 15.625%;
+  padding: 40px 70px 45px 30px;
+  font-size: 18px;
+  width: 400px;}
 
-.crosshair .vr {
-  background-color: darkred;
-  width: 2px;
-  height: 36px;
-  position: absolute;
-  top: 0;
-  left: 16px;
-  border-radius: 50%;}
+.portfolio-title {
+  font-size: 25px;}
 
-.crosshair .target {
-  border: 2px solid darkred;
-  border-radius: 100%;
-  position: absolute;
-  left: 9px;
-  top: 9px;
-  height: 16px;
-  width: 16px;}
+.portfolio-desc p {
+  margin-top: 25px;
+  line-height: 28px;}
 
-.indus-sign {
-  -webkit-animation: indussign 7s infinite;
-  animation: indussign 7s infinite;
-  background: darkred;
-  border-radius: 100%;
-  position: absolute;
-  top: 36px;
-  left: 42px;
-  width: 4px;
-  height: 4px;}
+.portfolio-tools {
+  margin-top: 15px;
+  font-size: 30px;}
 
-@keyframes indussign {
-  0%,55%,100% {opacity: 0;}
-  60%,99% {opacity: 1;}
-}
-
-@-webkit-keyframes indussign {
-  0%,55%,100% {opacity: 0;}
-  60%,99% {opacity: 1;}
-}
-
-@keyframes underthegun {
-  0% {top: 10px;left: 13px;opacity: 1;}
-  10% {top: 15px;left: 26px;}
-  20% {top: 26px;left: 15px;}
-  25% {top: 32px;left: 31px;}
-  30% {top: 36px;left: 22px;}
-  35% {top: 33px;left: 40px;}
-  45% {top: 20px;left: 26px;}
-  50% {top: 20px;left: 26px;}
-  55% {top: 10px;left: 26px;}
-  60% {top: 17px;left: 26px;}
-  65% {top: 17px;left: 26px;opacity: 1}
-  70% {top: 17px; left: 26px;opacity: 0;}
-  100% {top: 10px; left: 13px;opacity: 0;}
-}
-
-@-webkit-keyframes underthegun {
-  0% {top: 10px;left: 13px;opacity: 1;}
-  10% {top: 15px;left: 26px;}
-  20% {top: 26px;left: 15px;}
-  25% {top: 32px;left: 31px;}
-  30% {top: 36px;left: 22px;}
-  35% {top: 33px;left: 40px;}
-  45% {top: 20px;left: 26px;}
-  50% {top: 20px;left: 26px;}
-  55% {top: 10px;left: 26px;}
-  60% {top: 17px;left: 26px;}
-  65% {top: 17px;left: 26px;opacity: 1}
-  70% {top: 17px; left: 26px;opacity: 0;}
-  100% {top: 10px; left: 13px;opacity: 0;}
-}
+.portfolio-tools .fa + .fa {
+  margin-left: 15px;}
