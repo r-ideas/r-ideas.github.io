@@ -69,6 +69,13 @@
     margin-left: 5%;
     width: auto;}
 
+  /*------------ Portfolio ------------*/
+  .portfolio-desc {
+    left: 5%;
+    right: 5%;
+    padding: 20px;
+    width: auto;}
+
   /*------------ Footer ------------*/
   .team {
     flex-wrap: wrap;
